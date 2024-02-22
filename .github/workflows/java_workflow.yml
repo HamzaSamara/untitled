@@ -21,9 +21,18 @@ jobs:
         run : pwd
 
       - name: printALL!!
-        run: ls /home
+        run: |
+          ls /home
+          echo "TEST"
+          ls linuxbrew
+          ls runner
+          ls runneradmin
+          
+          
 
-
+        
+  
+  
 
 
 
