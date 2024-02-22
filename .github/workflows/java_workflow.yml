@@ -12,23 +12,16 @@ jobs:
 
 
       - name : ls command
-        run : ls -l
-
+        run : |
+          ls -l
+          ls ../
       - name : whoami command
         run : whoami
 
       - name : pwd where am i
         run : pwd
 
-      - name: printALL!!
-        run: |
-          ls /home
-          echo "TEST"
-          ls linuxbrew
-          ls runner
-          ls runneradmin
-          
-          
+
 
         
   
