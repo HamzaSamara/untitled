@@ -16,8 +16,13 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
+      - name: ls all
+        run:  ls src
       - name: Compile Java code
         run: javac src/Main.java
 
+      - name: ls all
+        run:  ls src
+
       - name: Run Java code
-        run: java src/Main
+        run: java src/Main.class
