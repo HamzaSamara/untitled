@@ -10,4 +10,4 @@ jobs:
   printing:
     steps:
       - name : print Hello!
-        uses : echo "Hello, World!"
+        run : echo "Hello, World!"
