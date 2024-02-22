@@ -4,8 +4,6 @@ on:
   push:
 
 jobs:
-  build:
-
   printing:
     runs-on: ubuntu-latest
     steps:
