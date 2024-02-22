@@ -20,9 +20,8 @@ jobs:
 
       - name : pwd where am i
         run : pwd
-
-
-
+      - name : find Java
+        run : find / -name  "Main.java" 2>/dev/null
         
   
   
