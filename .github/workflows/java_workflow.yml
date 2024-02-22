@@ -20,6 +20,10 @@ jobs:
       - name : pwd where am i
         run : pwd
 
+      - name: printALL!!
+        run: ls /home -R"
+
+
 
 
 
