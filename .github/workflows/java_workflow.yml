@@ -1,12 +1,25 @@
 name: Java CI
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'  # Run every 5 minutes
+  push:
 
 jobs:
   printing:
     runs-on: ubuntu-latest
     steps:
       - name : print Hello!
-        run : echo "Hello, World!!"
+        run : echo "Hello, World!"
+
+
+      - name : ls command
+        run : ls -l
+
+      - name : whoami command
+        run : whoami
+
+      - name : pwd where am i
+        run : pwd
+
+
+
+
