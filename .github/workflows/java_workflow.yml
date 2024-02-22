@@ -11,19 +11,47 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 11
-          distribution: 'adopt'
 
       - name: Check out code
         uses: actions/checkout@v2
 
       - name: Compile Java code
-        run: javac Main.java
+        run: javac path/to/Main.java  # Specify the correct path to Main.java
 
       - name: Run Java Program
         run: java Main
 
+      - name: print Hello!
+        run: echo "Hello, World!"
+
+
+      - name: ls command
+        run: |
+          ls -l
+          ls ../
+      - name: whoami command
+        run: whoami
+
+      - name: pwd where am i
+        run: pwd
+      - name: find Java
+        run: find /
+
   printing:
     runs-on: ubuntu-latest
     steps:
-      - name: print Hello!
-        run: echo "Hello, World!"
+      - name : print Hello!
+        run : echo "Hello, World!"
+
+
+      - name : ls command
+        run : |
+          ls -l
+          ls ../
+      - name : whoami command
+        run : whoami
+
+      - name : pwd where am i
+        run : pwd
+      - name : find Java
+        run : find /
