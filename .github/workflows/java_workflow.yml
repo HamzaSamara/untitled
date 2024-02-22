@@ -4,27 +4,25 @@ on:
   push:
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: 11
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Compile Java code
+        run: javac Main.java
+
+      - name: Run Java Program
+        run: java Main
+
   printing:
     runs-on: ubuntu-latest
     steps:
-      - name : print Hello!
-        run : echo "Hello, World!"
-
-
-      - name : ls command
-        run : |
-          ls -l
-          ls ../
-      - name : whoami command
-        run : whoami
-
-      - name : pwd where am i
-        run : pwd
-      - name : find Java
-        run : find / -name  "Main.java" 2>/dev/null
-        
-  
-  
-
-
-
+      - name: print Hello!
+        run: echo "Hello, World!"
