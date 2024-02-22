@@ -11,12 +11,13 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 11
+          distribution: 'adopt'
 
       - name: Check out code
         uses: actions/checkout@v2
 
       - name: Compile Java code
-        run: javac path/to/Main.java  # Specify the correct path to Main.java
+        run: javac Main.java
 
       - name: Run Java Program
         run: java Main
